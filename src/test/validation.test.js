@@ -8,3 +8,7 @@ describe('isProduct',()=>{
 		expect(isProduct({id:'A6',name:'byxor', price:200})).toBe(true)
 	})
 })
+
+test('om finns inte produkt visa false',()=>{
+	expect(isProduct({id:'A6',name:'byxor'})).toBe(false)
+})
